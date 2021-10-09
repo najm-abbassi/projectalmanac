@@ -13,12 +13,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOUR best anime filter</title>
+    <p  id="title" > CHOOSE YOUR ANIME TYPE MY BROTHER </p>
 </head>
 <body>
+
   
   <input type="text" id="TYPE" />
   <div class="buttons-container"> </div>
-  <button id="submit" onclick="compare()"> SUBMIT </button>
-    
+  <button id="submit" onclick="compare1() ; compare2()"  >  SUBMIT </button>
+  <script>   function compare1(x, y) {
+    y = $("#TYPE").val();
+    x = Object.values(shonen);
+    for (i = 0; i < x.length; i++) {
+      if (x[i] === y) {
+        console.log(x[1]);
+        console.log(x[2]);
+        console.log(x[3]);
+      }
+    }
+  }
+  function compare2(a, b) {
+    b = $("#TYPE").val();
+    a = Object.values(romance);
+    for (i = 0; i < a.length; i++) {
+      if (a[i] === b) {
+      console.log(a[1])
+        console.log(a[2]);
+        console.log(a[3]);
+      }
+    }
+  }
+  </script>  
 </body>
 </html>
