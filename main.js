@@ -8,4 +8,3 @@ function go() {
     return (a = 1);
   }
 }
-var b;

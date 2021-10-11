@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+  <head>
+    <h4 id="tt">welcome to my site</h4>
     <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANIME filter</title>
-</head>
-<body>  
-  <a href="https://animeheaven.ru/animeheaven.eu" id="download" > IF YOU want to download  </a>
-  <input type="text" id="TYPE" />
-  <h6><div id="message"> </div></h6>
-  <h6><div id="message1"> </div></h6> 
-  <h6><div id="message2"> </div></h6>   
-    <button id="submit" onclick="compare();compare1();compare2();compare3();go()"> SUBMIT </button>
-  <div id="thefirstcp"> 
-    <script>  
- function compare(){ 
-  var text;
-  var text1;
-  var text2;
-  var catigorie=TYPE.value;
-if ( catigorie=="shonen"){
- text= "(1)[onepiece]"
-text1="(2)[hunterXhunter]"
-    text2="(3)[CODE GEASSE]"
-  document.getElementById("message").innerHTML=text
-  document.getElementById("message1").innerHTML=text1
-  document.getElementById("message2").innerHTML=text2
-  
-} 
-}
-</script>
-</div>
-<div id="thesecondecp">
-<script>  
-function compare1(){
-  var text;
-  var text1;
-  var text2;  
-  var catigorie=TYPE.value;
-if ( catigorie=="hintay"){
-text= "(1)[ADVANTURE KID]"
-text1="(2)[KIBA GIRLS]"
-text2="(3)[ANGEL]"
-document.getElementById("message").innerHTML=text
-document.getElementById("message1").innerHTML=text1
-document.getElementById("message2").innerHTML=text2
-}
-}
-</script>
-</div>
-<div id="thethirdcp">
-<script>
-function compare2(){
-  var text;
-  var text1;
-  var text2;  
-  var catigorie=TYPE.value;
-if ( catigorie=="drama"){
-text= "(1)[*ATTACK ON TITAN*]"
-text1="(2)[FULL METAL ALCHIMIST]"
-text2="(3)[SCHOOL DAYS]"
-document.getElementById("message").innerHTML=text
-document.getElementById("message1").innerHTML=text1
-document.getElementById("message2").innerHTML=texte2
-}
-}
-</script>
-</div>
-<div id="theforthcp">
-<script>
- function compare3(){
-  var text;
-  var text1;
-  var text2;  
-  var catigorie=TYPE.value;
-if (catigorie=="romance"){
-text= "(1)[YOUR LIE IN APRIL ]"
-text1="(2)[SNOW WHITE WITH THE RED HAIR]"
-text2="(3)[AFTER STORY]"
-document.getElementById("message").innerHTML=text
-document.getElementById("message1").innerHTML=text1
-document.getElementById("message2").innerHTML=text2
-}
-}
-</script>
-</div>
-  <script>
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
+  </head>
+  <body>
+    <a href="https://animeheaven.ru/animeheaven.eu" id="download">
+      IF YOU want to download
+    </a>
+    <input type="text" id="TYPE" />
+    <h6><div id="message"></div></h6>
+    <h6><div id="message1"></div></h6>
+    <h6><div id="message2"></div></h6>
+    <button
+      id="submit"
+      onclick="compare();compare1();compare2();compare3();go();go1()"
+    >
+      SUBMIT
+    </button>
+
+    <div id="thefirstcp">
+      <script>
+        function compare() {
+          var text;
+          var text1;
+          var text2;
+          var catigorie = TYPE.value;
+          if (catigorie == "shonen") {
+            text = "(1)[onepiece]";
+            text1 = "(2)[hunterXhunter]";
+            text2 = "(3)[CODE GEASSE]";
+            document.getElementById("message").innerHTML = text;
+            document.getElementById("message1").innerHTML = text1;
+            document.getElementById("message2").innerHTML = text2;
+          }
+        }
+      </script>
+    </div>
+    <div id="thesecondecp">
+      <script>
+        function compare1() {
+          var text;
+          var text1;
+          var text2;
+          var catigorie = TYPE.value;
+          if (catigorie == "hintay") {
+            text = "(1)[ADVANTURE KID]";
+            text1 = "(2)[KIBA GIRLS]";
+            text2 = "(3)[ANGEL]";
+            document.getElementById("message").innerHTML = text;
+            document.getElementById("message1").innerHTML = text1;
+            document.getElementById("message2").innerHTML = text2;
+          }
+        }
+      </script>
+    </div>
+    <div id="thethirdcp">
+      <script>
+        function compare2() {
+          var text;
+          var text1;
+          var text2;
+          var catigorie = TYPE.value;
+          if (catigorie == "drama") {
+            text = "(1)[*ATTACK ON TITAN*]";
+            text1 = "(2)[FULL METAL ALCHIMIST]";
+            text2 = "(3)[SCHOOL DAYS]";
+            document.getElementById("message").innerHTML = text;
+            document.getElementById("message1").innerHTML = text1;
+            document.getElementById("message2").innerHTML = texte2;
+          }
+        }
+      </script>
+    </div>
+    <div id="theforthcp">
+      <script>
+        function compare3() {
+          var text;
+          var text1;
+          var text2;
+          var catigorie = TYPE.value;
+          if (catigorie == "romance") {
+            text = "(1)[YOUR LIE IN APRIL ]";
+            text1 = "(2)[SNOW WHITE WITH THE RED HAIR]";
+            text2 = "(3)[AFTER STORY]";
+            document.getElementById("message").innerHTML = text;
+            document.getElementById("message1").innerHTML = text1;
+            document.getElementById("message2").innerHTML = text2;
+          }
+        }
+      </script>
+    </div>
+    <script>
+      src = "https://code.jquery.com/jquery-3.6.0.min.js";
+      integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=";
+      crossorigin = "anonymous";
     </script>
     <script src="main.js"></script>
+    <script>
+      var b;
+      function go1() {
+        if (b == 1) {
+          document.getElementById("tt").style.display = "inline";
+          return (b = 0);
+        } else {
+          document.getElementById("tt").style.display = "none";
+          return (b = 1);
+        }
+      }
     </script>
-<Script 
-src="main.js">
-</Script>
-</body>
+  </body>
 </html>
